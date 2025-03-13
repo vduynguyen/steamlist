@@ -1,2 +1,2 @@
 # steamlist
-Gencap stone 
+Capstone Project
