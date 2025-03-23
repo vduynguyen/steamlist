@@ -1,19 +1,19 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar"; // Navbar for navigation
-import StreamList from "./pages/StreamList"; // The StreamList page
-import Movies from "./pages/Movies"; // The Movies page
-import Cart from "./pages/Cart"; // The Cart page
-import About from "./pages/About"; // The About page
+import Navbar from "./components/Navbar";
+import StreamList from "./pages/StreamList";
+import Movies from "./pages/Movies";
+import Cart from "./pages/Cart";
+import About from "./pages/About";
 
 function AppRoutes() {
   return (
     <Router>
-      <Navbar /> {/* Render Navbar component */}
+      <Navbar />
       <Routes>
-        <Route path="/" element={<StreamList />} /> {/* Default route */}
-        <Route path="/movies" element={<Movies />} /> {/* Movies page */}
-        <Route path="/cart" element={<Cart />} /> {/* Cart page */}
-        <Route path="/about" element={<About />} /> {/* About page */}
+        <Route path="/" element={<StreamList />} />
+        <Route path="/movies" element={<Movies />} /> {/* Added Movies Route */}
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
   );
